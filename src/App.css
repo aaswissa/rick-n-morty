@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.75rem;
+}
+
+.cards {
+  display: grid;
+  width: 40rem;
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  grid-gap: 0.875rem;
+}
+
+.card {
+  border: 0.5px solid gray;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.main {
+  text-align: center;
+}
+
+.chart {
+  display: grid;
+  grid-template-columns: repeat(5);
+  grid-column-gap: 0.5rem;
+  height: 25rem;
+  background: #fff;
+  padding: 2.5rem;
+}
+
+.bar {
+  position: relative;
+  grid-row-start: 1;
+  margin-top: auto;
+}
+.bar span {
+  position: relative;
+  top: -1.25rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+.bar label {
+  position: absolute;
+  width: auto;
+  bottom: -1.45rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
